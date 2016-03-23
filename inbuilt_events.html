@@ -1,0 +1,73 @@
+<!--
+ * Cytonn Technologies
+ *
+ * @author: Hashim Amani <hamani@cytonn.com>
+ *
+ * Project: Javascript_events.
+ *
+ *-->
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+	<script src = "javascript.js"></script>
+</head>
+<body bgcolor="009988" onafterprint = "myFunction()" onresize= "resizeFunction()">
+
+            <!-- windowevents-->
+
+			<h1>Window Events</h1>
+			<p><b>Tip:</b> Keyboard shortcuts, such as Ctrl+P sets the page to print.</p>
+			<p><b>Tip:</b> try resizing the window too.</p>
+            
+            <hr>
+
+            <!-- form events-->
+            <h1>Form Events</h1>
+
+			<p><b>Tip:</b> try to put your cursor in the field, put a text or try to leave the input field </p>
+			<form onreset= "resetFunction()" onsubmit= "submitFunction()">
+				Enter your name: <input type="text" id="myInput" onfocus="focusFunction()" onblur="blurFunction()" oninput= "inputFunction()">
+				<p id="p1"></p>
+
+				<p>When you reset the form, a function is triggered which alerts some text.</p>
+			    <input type="reset">
+			    <p>When you submit the form, a function is triggered which alerts some text.</p>
+			    <input type="submit" value="Submit">
+			</form>
+            
+            <hr>
+
+            <!-- mouse events-->
+            <h1>Mouse Events</h1>
+            <p id="paragraph" onclick= "pFunction()" onmouseover= "pmouseOver()" onmouseout= "pmouseOut()" on 
+           >Click me to change my text color. Put the mouse over me.</p>
+            <button ondblclick= "dbFunction()">Double-click me</button>
+            <p id="p2"></p>
+
+            <hr>
+
+            <!-- keyboard events-->
+            <h1>Keyboard Events</h1>
+            <p>Press and hold down a key inside the text field to set a yellow background color. Release the key to set a green background color.</p>
+            <input type="text" id="keyInput" onkeydown="keydownFunction()" onkeyup="keyupFunction()">
+            <hr>
+
+            <!-- clipboard events-->
+
+            <h1>Clipboard Events</h1>
+
+            <input type="text" oncopy="copyFunction()" value="Try to copy this text">
+
+            <p id="p3"></p>
+
+            <p >Try to paste something below</p>
+
+            <textarea onpaste="areaFunction()"></textarea>  
+
+            <p id="p4"></p>
+
+
+</body>
+</html>
